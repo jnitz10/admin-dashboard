@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: 20vw 80vw;
+    padding: 0;
+    margin: 0;
+}
+
+
+.left {
+    background-color: lightgray;
+    font-size: 1.125em;
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+}
+.right {
+    background-color: seagreen;
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.rightGrid {
+    display: grid;
+}
+
+
+.topBar {
+    background-color: seashell;
+    height: 10vh;
+    width: 80vw;
+}
+
+
+.sidebar {
+    display: flex;
+    flex-direction: column nowrap;
+}
+
+.sidebar img {
+    height: 20px;
+    width: auto;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-top: 0px;
+}
+
+.topBar img {
+    height: 15px;
+    width: auto;
+}
+
+.top{
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+#sigil {
+    height: 55px;
+    width: auto;
+}

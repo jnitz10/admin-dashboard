@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 20vw 80vw;
+    grid-template-rows: 100vh 100vh;
+    
+}
+.left {
+    background-color: lightgray;
+    font-size: 1.125em;
+    width: 100%;
+    height: 100%;
+}
+.right {
+    background-color: seagreen;
+}
+
+#sidebar {
+    display: flex;
+    flex-direction: column nowrap;
+    height: 100%;
+}
+
+.home {
+    list-style-image: url('resources/home.svg');
+}
+
+.profile {
+    list-style-image: url('resources/profile.svg');
+}
+
+.messages {
+    list-style-image: url('resources/messages.svg');
+}
+
+.history {
+    list-style-image: url('resources/history.svg');
+}
+
+.tasks {
+    list-style-image: url('resources/tasks.svg');
+}
+
+.groups {
+    list-style-image: url('resources/groups.svg');
+}
+
+.settings {
+    list-style-image: url('resources/settings.svg');
+}
+
+.support {
+    list-style-image: url('resources/support.svg');
+}
+
+.privacy {
+    list-style-image: url('resources/privacy.svg');
+}

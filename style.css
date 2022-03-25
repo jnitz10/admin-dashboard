@@ -3,64 +3,59 @@
 body {
     font-family: 'Roboto', sans-serif;
     display: grid;
-    grid-template-columns: 20vw 80vw;
-    padding: 0;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    padding: 4px;
+    gap: 4px;
     margin: 0;
+    border: 1px solid grey;
+    height: calc(100vh - 5px);
 }
-
-
-.left {
-    background-color: lightgray;
-    font-size: 1.125em;
-    padding-bottom: 0px;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    
-}
-.right {
-    background-color: seagreen;
-    padding-bottom: 0px;
-    display: flex;
-    flex-direction: row;
-}
-
-.rightGrid {
-    display: grid;
-}
-
-
-.topBar {
-    background-color: seashell;
-    height: 10vh;
-    width: 80vw;
-}
-
 
 .sidebar {
-    display: flex;
-    flex-direction: column nowrap;
+    background-color: wheat;
+    grid-area: 1 / 1 / 6 / 2;
 }
 
-.sidebar img {
-    height: 20px;
-    width: auto;
-    padding-left: 15px;
-    padding-right: 10px;
-    padding-top: 0px;
+.header {
+    background-color: salmon;
+    grid-area: 1 / 2 / 2 / 6;
 }
 
-.topBar img {
-    height: 15px;
-    width: auto;
+.content {
+    grid-area: 2 / 2 / 6 / 6;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
 }
 
-.top{
-    margin-top: 8px;
-    margin-left: 8px;
+.mid {
+    background-color: cadetblue;
+    grid-area: 1 / 1 / 7 / 4;
 }
 
-#sigil {
-    height: 55px;
-    width: auto;
+.projects {
+    display: grid;
+    grid-template-rows: repeat(3, 3fr);
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3px;
+    row-gap: 3px;
+    height: calc(100% - 80px);
+    margin: 5px;
+}
+
+.project-card {
+    background-color: palegoldenrod;
+    margin: 5px;
+    border-radius: 5px;
+    
+}
+
+.right-bar {
+    background-color: cornflowerblue;
+    grid-area: 1 / 4 / 7 / 5;
+}
+
+h5 {
 }

@@ -8,44 +8,58 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="left">
-      <p class="sidebar"><img  alt="" src="resources/home.svg"/>Home</p>
-      <p class="sidebar"><img  alt="" src="resources/profile.svg"/>Profile</p>
-      <p class="sidebar"><img  alt="" src="resources/messages.svg"/>Messages</p>
-      <p class="sidebar"><img  alt="" src="resources/history.svg"/>History</p>
-      <p class="sidebar"><img  alt="" src="resources/tasks.svg"/>Tasks</p>
-      <p class="sidebar"><img  alt="" src="resources/groups.svg"/>Groups</p>
-      <p class="sidebar"><img  alt="" src="resources/settings.svg"/>Settings</p>
-      <p class="sidebar"><img  alt="" src="resources/support.svg"/>Support</p>
-      <p class="sidebar"><img  alt="" src="resources/privacy.svg"/>Privacy</p>
+    <div class="sidebar">
+      <h3>Dashboard</h3>
+      <ul>
+	<li>Home</li>
+	<li>Profile</li>
+	<li>Messages</li>
+	<li>History</li>
+	<li>Tasks</li>
+	<li>Communities</li>
+	<li>Settings</li>
+	<li>Support</li>
+	<li>Privacy</li>
+      </ul>
     </div>
-    <div class="right">
-      <div class="topBar">
-	<p class="top"><img class="search" alt="search" src="resources/search.svg"/>
-	  <input name="search" type="text" value="search"/>
-	  <img alt="notifications" src="resources/notification.svg"/>
-	  <!--<img id="sigil" alt="sigil" src="resources/modbus-podseb.svg"/>-->
-	  <span>James Nitzband</span>
-	</p>
-	
-	
+    <div class="header">
+      <div class="search-bar">
+      <input name="search-bar" type="text" value="search"/>
       </div>
-      <div class="rightContent">
-	<div id="rightGrid">
-	  <div class="projects">
-	    <p>Your Projects</p>
-	    <div class="projectGridItem"></div>
-	    <div class="projectGridItem"></div>
-	    <div class="projectGridItem"></div>
-	    <div class="projectGridItem"></div>
-	    <div class="projectGridItem"></div>
-	    <div class="projectGridItem"></div>
-	    <div class="projectGridItem"></div>
-	  </div>
-	</div>
-	
+      <div class="buttons-bar">
+	<h4 style="display: inline">username</h4>
+	<button type="button">New</button>
+	<button type="button">Upload</button>
+	<button type="button">Share</button>
       </div>
     </div>
-
+    <div class="content">
+      <div class="mid">
+	<h4>Projects</h4>
+	<div class="projects">
+	  <div class="project-card"><h5>Project</h5></div>
+	  <div class="project-card"><h5>Project</h5></div>
+	  <div class="project-card"><h5>Project</h5></div>
+	  <div class="project-card"><h5>Project</h5></div>
+	  <div class="project-card"><h5>Project</h5></div>
+	  <div class="project-card"><h5>Project</h5></div>
+        </div>
+      </div>
+      <div class="right-bar">
+        <div class="announcements">
+          <h4>Announcements</h4>
+          <div class="announcement-card"></div>
+          <div class="announcement-card"></div>
+          <div class="announcement-card"></div>
+        </div>
+        <div class="trending">
+          <h4>Trending</h4>
+          <div class="profile"></div>
+          <div class="profile"></div>
+          <div class="profile"></div>
+          <div class="profile"></div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
